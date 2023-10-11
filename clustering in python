@@ -12,7 +12,7 @@ class KMeansClustering:
 
     @staticmethod
     def euclidean_distance(data_point, centroids):
-        return np.sqrt(np.sum(centroids - data_point)**2, axis=1)
+        return np.sqrt(np.sum((centroids - data_point)**2, axis=1))
 
 
 
